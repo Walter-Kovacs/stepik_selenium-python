@@ -12,3 +12,11 @@ def test_not_succeed():
 @pytest.mark.skip
 def test_skipped():
     assert False
+
+@pytest.mark.abc
+def test_abc1():
+    assert True
+
+@pytest.mark.abc
+def test_abc2():
+    assert True
